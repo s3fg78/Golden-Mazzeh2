@@ -505,7 +505,7 @@ const Footer = () => {
 
         <div className="pt-12 border-t border-gold/5 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-[10px] text-cream/30 uppercase tracking-[0.2em]">
-            © 2025 فندق جولدن مزة • دمشق، سوريا • جميع الحقوق محفوظة
+            © 2026 فندق جولدن مزة • دمشق، سوريا • جميع الحقوق محفوظة
           </p>
           <div className="flex gap-4 opacity-30 grayscale hover:grayscale-0 transition-all">
             {/* Payment Icons Placeholder */}
