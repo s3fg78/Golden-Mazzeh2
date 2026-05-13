@@ -202,14 +202,15 @@ const Hero = () => {
       </div>
 
       {/* Scroll indicator */}
-      <motion.div 
+      <motion.a 
+        href="#about"
         animate={{ y: [0, 10, 0] }}
         transition={{ repeat: Infinity, duration: 2 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50"
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-70 hover:opacity-100 transition-opacity"
       >
-        <span className="text-[10px] tracking-widest uppercase">اكتشف المزيد</span>
+        <span className="text-[12px] tracking-widest uppercase font-amiri">مرر للاسفل للمزيد من التفاصيل</span>
         <div className="w-[1px] h-12 bg-gold" />
-      </motion.div>
+      </motion.a>
     </section>
   );
 };
