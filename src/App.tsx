@@ -274,7 +274,7 @@ const About = () => {
   );
 };
 
-const RoomCard = ({ title, desc, img, price, features }: any) => {
+const RoomCard = ({ title, desc, img, features }: any) => {
   return (
     <motion.div 
       whileHover={{ y: -10 }}
@@ -304,12 +304,6 @@ const RoomCard = ({ title, desc, img, price, features }: any) => {
             </span>
           ))}
         </div>
-        <div className="flex justify-between items-center pt-6 border-t border-gold/10">
-          <span className="text-gold font-cinzel text-xl">{price}</span>
-          <button className="text-xs uppercase tracking-[0.2em] text-cream hover:text-gold transition-colors">
-            عرض التفاصيل
-          </button>
-        </div>
       </div>
     </motion.div>
   );
@@ -321,21 +315,18 @@ const Rooms = () => {
       title: "الغرفة الكلاسيكية",
       desc: "تصميم مريح يجمع بين البساطة والأناقة الدمشقية، مثالية للمسافرين بمفردهم أو في رحلات العمل.",
       img: IMAGES.roomClassic,
-      price: "$120 / ليلة",
       features: ["سرير ملكي", "واي فاي", "مطلة على المدينة"]
     },
     {
       title: "الغرفة الديلوكس",
       desc: "مساحة أوسع مجهزة بأرقى الأثاث، مع إطلالات بانورامية ساحرة على حي المزة وجبال دمشق.",
       img: IMAGES.roomDeluxe,
-      price: "$180 / ليلة",
       features: ["سرير ملكي", "شرفة خاصة", "ميني بار"]
     },
     {
       title: "الجناح الذهبي",
       desc: "قمة الفخامة، جناح واسع يضم غرفة معيشة مستقلة، وتفاصيل يدوية الصنع تجسد روح القصور الدمشقية.",
       img: IMAGES.roomSuite,
-      price: "$350 / ليلة",
       features: ["جناح ملكي", "خادم خاص", "جاكوزي"]
     }
   ];
@@ -506,9 +497,8 @@ const Footer = () => {
           <div>
             <h4 className="text-gold text-xs tracking-widest uppercase mb-8">تابعنا</h4>
             <div className="flex gap-6">
-              <a href="#" className="text-cream/40 hover:text-gold transition-colors"><Instagram size={24} /></a>
-              <a href="#" className="text-cream/40 hover:text-gold transition-colors"><Facebook size={24} /></a>
-              <a href="#" className="text-cream/40 hover:text-gold transition-colors"><Twitter size={24} /></a>
+              <a href="https://www.instagram.com/salma.m.janat?igsh=dTdlMnp2d280am9i" target="_blank" rel="noopener noreferrer" className="text-cream/40 hover:text-gold transition-colors"><Instagram size={24} /></a>
+              <a href="https://www.facebook.com/goldenmazzeh/" target="_blank" rel="noopener noreferrer" className="text-cream/40 hover:text-gold transition-colors"><Facebook size={24} /></a>
             </div>
           </div>
         </div>
